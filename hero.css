@@ -2,39 +2,54 @@
 hero
 ********************* */
 .hero{
-    background: url(image/image44.jpeg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 420px;
-    display: flex;
+     background: url(image/image44.jpeg);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+ 
+     height: 650px;
+     display: flex;
+     justify-content: center;
+     align-items:center;
+     flex-direction: column;
+     text-align: center;
+     padding: 2rem;
+    }
+@media (max-width:600px) {
+    .hero{
+        background-position: center;
+        height: 550PX;
+
+    }
+    .text-hero{
+        top: 5rem;
+
+    }
+div.buttons{
+    margin-top: 10rem;
+}
+}
+     .text-hero{
+          color:var(--white);
+        top:2rem;
+        font-size: 2.8rem;
+        margin-bottom: 1.5rem;
+        font-weight: bold;
+        position: static;
+    } 
+        
+
+ div.buttons{
     justify-content: center;
     align-items: center;
-    position: relative;
-}
-
-@media (max-width: 600px){
-    .hero{
-        height: 350px;
-        background-position: center;
-    }
-
-    .text-hero{
-        position: absolute;
-        top: 4rem;
-        text-align: center;
-        width: 90%;
-    }
-
-    div.buttons{
-        position: absolute;
-        bottom: 3rem;
-        left: 50%;
-        transform: translateX(-50%);
-        display: flex;
-        gap: 1rem;
-    }
-}
+    position: static;
+    margin: 0;
+    padding: 0;
+    display:flex;
+    gap: 1rem;
+    padding-top: 2rem;
+ }
+    
     
    a.bant{
     color: var(--wieth);
@@ -52,7 +67,7 @@ hero
        padding: 0.33rem 2rem 0.20rem;
        font-size: 1rem;   
     }
- }
+ 
  /* ============
    quien somos
    ==========0*/
