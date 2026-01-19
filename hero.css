@@ -26,14 +26,12 @@ hero
         width: 90%;
     }
 
-    div.buttons{
-        position: absolute;
-        bottom: 3rem;
-        left: 50%;
-        transform: translateX(-50%);
-        display: flex;
-        gap: 1rem;
-    }
+    .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
 
    a.bant{
     color: var(--wieth);
