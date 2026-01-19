@@ -2,39 +2,39 @@
 hero
 ********************* */
 .hero{
-     background: url(image/iimage\ 4.jpeg);
-background-position: center;
-background-size: cover;
-background-repeat: no-repeat;
- background-attachment: fixed;
-     height: 500px;
-     display: flex;
-     justify-content: center;
-     align-items:center;
-     position: relative;
-    }
-@media (max-width:600px) {
-    .hero{
-        background-position: center;
-        height: 350PX;
+    background: url(image/image44.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 420px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
 
+@media (max-width: 600px){
+    .hero{
+        height: 350px;
+        background-position: center;
+    }
+
+    .text-hero{
+        position: absolute;
+        top: 4rem;
+        text-align: center;
+        width: 90%;
+    }
+
+    div.buttons{
+        position: absolute;
+        bottom: 3rem;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 1rem;
     }
 }
-     .text-hero{
-          color:var(--white);
-          position: absolute;
-        top:2rem;
-        font-size: 2.3rem;
-        margin-left: 3rem;
-    } 
-        
-
- div .buttons{
-    margin-left: 2rem;
-    display:flex;
-    gap: 3rem;
-    padding-top: 2rem;
-    font-size: 1rem;
     
    a.bant{
     color: var(--wieth);
