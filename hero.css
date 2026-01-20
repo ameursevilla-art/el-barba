@@ -11,7 +11,7 @@ hero
     justify-content: center;
     align-items: center;
     position: relative;
-}
+} 
 
 @media (max-width: 600px){
     .hero{
@@ -20,35 +20,40 @@ hero
     }
 
     .text-hero{
+        
         position: absolute;
         top: 4rem;
         text-align: center;
         width: 90%;
     }
+}
+.text-hero{
+    color:var(--white);
+}
 
-    .buttons {
+    div.buttons {
     display: flex;
     justify-content: center;
     gap: 1rem;
     margin-top: 2rem;
-}
-
+    }
+/*  */
    a.bant{
-    color: var(--wieth);
+    color: var(--white);
        background-color: rgb(202, 151, 86);  
        border: 1px solid var(--blu-buton); 
        border-radius: 10px;
        padding: 0.33rem 2rem 0.20rem;
        font-size: 1rem;
     }
-    .btn{
+    a.btn{
        color:black;
        background-color: rgb(230, 226, 221);  
        border: 1px solid var(--blu-buton); 
        border-radius: 10px;
        padding: 0.33rem 2rem 0.20rem;
        font-size: 1rem;   
-    }}
+    }
  
  /* ============
    quien somos
