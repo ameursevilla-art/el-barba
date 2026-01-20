@@ -1,7 +1,7 @@
 /* ******************
 hero
 ********************* */
-.hero{
+.hero-2{
     background: url(image/image44.jpeg);
     background-position: center;
     background-size: cover;
@@ -14,7 +14,7 @@ hero
 } 
 
 @media (max-width: 600px){
-    .hero{
+    .hero-2{
         height: 350px;
         background-position: center;
     }
@@ -31,14 +31,14 @@ hero
     color:var(--white);
 }
 
-    div.buttons {
+    div.buttons{
     display: flex;
     justify-content: center;
     gap: 1rem;
     margin-top: 2rem;
     }
 /*  */
-   a.bant{
+   a.bant {
     color: var(--white);
        background-color: rgb(202, 151, 86);  
        border: 1px solid var(--blu-buton); 
