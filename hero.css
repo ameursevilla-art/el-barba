@@ -1,7 +1,7 @@
 /* ******************
 hero
 ********************* */
-.hero-2{
+.hero-2 {
     background: url(image/image44.jpeg);
     background-position: center;
     background-size: cover;
@@ -11,24 +11,60 @@ hero
     justify-content: center;
     align-items: center;
     position: relative;
-} 
+}
 
+/* النص فوق الصورة */
+.hero-2 .text-hero {
+    position: absolute;
+    top: 6rem;
+    text-align: center;
+    width: 90%;
+}
+
+/* اللون الأبيض للنص */
+.hero-2 .text-hero * {
+    color: white !important;
+}
+
+/* أزرار */
+div.buttons{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+a.bant{
+    color: var(--white);
+    background-color: rgb(202, 151, 86);
+    border: 1px solid var(--blu-buton);
+    border-radius: 10px;
+    padding: 0.33rem 2rem 0.20rem;
+    font-size: 1rem;
+}
+
+a.btn{
+    color: black;
+    background-color: rgb(230, 226, 221);
+    border: 1px solid var(--blu-buton);
+    border-radius: 10px;
+    padding: 0.33rem 2rem 0.20rem;
+    font-size: 1rem;
+}
+
+/* للموبايل */
 @media (max-width: 600px){
     .hero-2{
+        
         height: 350px;
         background-position: center;
     }
 
-    .text-hero{
-        
-        position: absolute;
-        top: 4rem;
-        text-align: center;
+    .hero-2 .text-hero{
+        top: 7rem;
         width: 90%;
+        text-align: center;
     }
-}
-.text-hero{
-    color:var(--white);
 }
 
     div.buttons{
