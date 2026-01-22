@@ -43,9 +43,9 @@ a.bant{
     font-size: 1rem;
 }
 
-a.btn{
-    color: black;
-    background-color: rgb(230, 226, 221);
+a.btn-bnt{
+    color: #faebeb;
+    background-color: rgb(20, 19, 17);
     border: 1px solid var(--blu-buton);
     border-radius: 10px;
     padding: 0.33rem 2rem 0.20rem;
@@ -82,9 +82,9 @@ a.btn{
        padding: 0.33rem 2rem 0.20rem;
        font-size: 1rem;
     }
-    a.btn{
+    a.btn-bnt{
        color:black;
-       background-color: rgb(230, 226, 221);  
+       background-color: black;  
        border: 1px solid var(--blu-buton); 
        border-radius: 10px;
        padding: 0.33rem 2rem 0.20rem;

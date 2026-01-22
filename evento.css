@@ -1,0 +1,449 @@
+/* ===== HEADER ===== */
+.main-header {
+    background: white;
+    padding: 18px 0;
+    box-shadow: 0 6px 25px rgba(0,0,0,0.08);
+    border-radius: 0 0 25px 25px;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* LOGO */
+.logo img {
+    height: 48px;
+}
+
+/* MENU */
+.nav-menu {
+    display: flex;
+    gap: 35px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #0a2c47;
+    position: relative;
+}
+
+.nav-menu a.active,
+.nav-menu a:hover {
+    color: #008cff;
+}
+
+.nav-menu a.active::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #008cff;
+    border-radius: 5px;
+}
+
+/* ACTIONS */
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* WHATSAPP */
+.btn-whatsapp img {
+    width: 34px;
+    height: 34px;
+    display: block;
+}
+.btn-whatsapp:hover img{
+    transform: scale(1.1);
+}
+/* GOLD BUTTON */
+.btn-header-gold {
+    background: linear-gradient(135deg, #f2b705, #d89b00);
+    color: white;
+    padding: 12px 22px;
+    border-radius: 30px;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: 0 6px 18px rgba(216,155,0,0.4);
+    transition: 0.3s;
+}
+
+.btn-header-gold:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(216,155,0,0.6);
+}
+
+/* RESPONSIVE */
+
+
+ 
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background: #f1f1f1;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* TITLE */
+.eventos-header {
+    text-align: center;
+    padding: 60px 20px;
+    margin-bottom: 40px;
+}
+
+.eventos-header h1 {
+    font-size: 45px;
+    font-weight: 700;
+    color: #0a2c47;
+}
+
+.eventos-header p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* MAIN CONTAINER */
+.eventos-pro {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* CARD DESIGN */
+.evento-card-full {
+    
+    position: relative;
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    background: #ffffff;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    margin-bottom: 55px;
+    align-items: stretch;
+}
+.evento-card-full {
+  transition: 0.3s;
+}
+
+.evento-card-full:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.18);
+}
+
+/* IMAGE */
+.evento-card-full img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    border-top-left-radius: 18px;
+    border-bottom-left-radius: 18px;
+}
+.evento-card-full img {
+    transition: transform 0.6s ease;
+}
+
+.evento-card-full:hover img {
+    transform: scale(1.05);
+}
+
+/* GRADIENT */
+.evento-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, rgba(255,255,255,0.94), rgba(255,255,255,0));
+    z-index: 1;
+}
+
+/* TEXT */
+.evento-content {
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+gap: 4px;
+    z-index: 2;}
+    
+    
+
+
+
+
+.evento-content h2 {
+    font-size: 26px;
+    color: #0a2c47;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.evento-content h3 {
+
+    font-size: 18px;
+    color: #1a1a1a;
+    margin-bottom: 14px;
+}
+
+.evento-content p {
+    
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    max-width:95% ;
+    margin-bottom: 20px;
+}
+
+/* BUTTON */
+.btn-evento {
+    display: inline-block;
+    padding: 12px 28px;
+    background:linear-gradient(90deg,#1e90ff,#0077ff);
+    color: white;
+    border-radius: 10px;
+    font-weight: 600;
+box-shadow: 0 4px 12px rgb(0, 119, 255,0.35);
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.btn-evento:hover {
+    background: #006fcc;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(0,119,255,0.45);
+}
+.btn-evento-gold {
+    display: inline-block;
+    width: auto;
+    max-width:180px ;
+ background: linear-gradient(135deg, #d4af37, #f2c94c);
+    box-shadow: 0 6px 16px rgba(212,175,55,0.45);
+    
+    color: #fff;
+font-size: 16px;
+    padding: 14px 32px;
+    border-radius: 10px;
+
+    font-weight: 700;
+    text-decoration: none;
+
+    
+    transition: 0.3s ease;
+}
+
+.btn-evento-gold:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(216, 156, 0, 0.6);
+    background: linear-gradient(135deg, #c49b2e, #e6b93d);
+
+}
+
+
+@media (max-width:768px) {
+   .btn-evento-gold {
+    width: 100%;
+    max-width: 320px;
+   }
+}
+
+.btn-evento-gold,
+.btn-evento{
+    margin-top: 10px;
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+    .evento-card-full {
+        grid-template-columns: 1fr;
+    }
+
+    .evento-card-full img {
+        height: 240px;
+        object-position: center;
+    }
+
+
+    .evento-content {
+        padding: 25px;
+    }
+}
+.evento-card-full {
+    animation: fadeUp 0.8s ease forwards;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* =========================
+   MOBILE VERSION
+========================= */
+@media (max-width: 768px) {
+.eventos-header{
+    padding: 40px 16px;
+}
+  /* HEADER */
+  .eventos-header h1 {
+    font-size: 30px;
+    line-height: 1.2;
+    letter-spacing: 1px;
+  }
+
+  .eventos-header p {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  /* CARD */
+  .evento-card-full {
+    grid-template-columns: 1fr;
+    border-radius: 16px;
+  }
+
+  /* IMAGE */
+  .evento-card-full img {
+    height: 220px;
+    border-radius: 16px 16px 0 0;
+  }
+
+  /* OVERLAY */
+  .evento-overlay {
+    background: linear-gradient(
+      to bottom,
+      rgba(255,255,255,0.1),
+      rgba(255,255,255,0.95)
+    );
+  }
+
+  /* CONTENT */
+  .evento-content {
+    padding: 22px;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .evento-content h2 {
+    font-size: 22px;
+  }
+
+  .evento-content h3 {
+    font-size: 16px;
+  }
+
+  .evento-content p {
+    font-size: 15px;
+  }
+
+  /* BUTTON */
+  .btn-evento,
+  .btn-evento-gold {
+    width: 100%;
+    text-align: center;
+    padding: 14px 0;
+    font-size: 16px;
+    border-radius: 10px;
+  }
+
+  /* WHATSAPP ICON */
+  .btn-whatsapp img {
+    width: 28px;
+    height: 28px;
+  }
+
+}
+@media (max-width: 900px) {
+
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .nav-menu {
+    display: flex;          /* باش يبان */
+    gap: 15px;
+    font-size: 14px;
+    flex-wrap: wrap;
+  }
+
+  .header-actions {
+    display: flex;
+    gap: 10px;
+  }
+}@media (max-width: 365px) {
+
+  .header-container {
+    flex-wrap: nowrap;      /* ممنوع يهبطو */
+  }
+
+  .nav-menu {
+    display: flex;
+    gap: 10px;              /* نقص المسافة */
+    font-size: 12px;        /* نقص الخط */
+    white-space: nowrap;    /* يبقاو فـ سطر واحد */
+  }
+
+  .nav-menu a {
+    font-weight: 600;
+  }
+
+  .header-actions {
+    gap: 6px;
+  }
+
+  .btn-header-gold {
+    padding: 8px 14px;
+    font-size: 12px;
+  }
+
+  .btn-whatsapp img {
+    width: 26px;
+    height: 26px;
+  }
+} ::-webkit-scrollbar{
+    width: 0.88rem;
+}
+::-webkit-scrollbar-track {
+  border: 7px solid #292c3b;
+  box-shadow: inset 0 0 2.5px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  background-color: #d4d4d8;
+  }
+ 
+::-webkit-scrollbar-thumb {
+  background: #999;
+  border-radius: 2px;
+}
+ 
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+                
